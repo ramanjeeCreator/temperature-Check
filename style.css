@@ -9,8 +9,9 @@ body {
     width: 100vw;
     min-height: 100vh;
     font-size: 68.5%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow-x: hidden;
 }
 
