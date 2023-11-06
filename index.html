@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>temperature Checker</title>
+</head>
+
+<body>
+    <div id="main-cont">
+        <div id="heading-cont">
+            <h2>Conversion of Temperature</h2>
+        </div>
+        <div id="main-temp-cont">
+            <div id="cel-cont" class="temp-cont">
+                <input type="number" name="cel" id="cel" value="0" oninput="calcTemp(this)">
+                <label for="cel" min="0" max="100">°Celsius</label>
+            </div>
+            <div id="fah-cont" class="temp-cont">
+                <input type="number" name="fah" id="fah" value="32" oninput="calcTemp(this)">
+                <label for="fah" min="32" max="212">°Fahrenheit</label>
+            </div>
+            <div id="kel-cont" class="temp-cont">
+                <input type="number" name="kel" id="kel" value="273" oninput="calcTemp(this)">
+                <label for="kel" min="273.15" max="373.15">Kelvin</label>
+            </div>
+        </div>
+        <div id="create-cont">
+            <button id="create" onclick="create()">Create Your Own</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
